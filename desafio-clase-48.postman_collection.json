@@ -1,0 +1,250 @@
+{
+	"info": {
+		"_postman_id": "c4a19d7d-46a7-45aa-b8dd-e8ed4ea07ff1",
+		"name": "desafio-clase-48",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Productos",
+			"item": [
+				{
+					"name": "getProductById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/producto/62fc26b26e6eeb4d17332796",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"producto",
+								"62fc26b26e6eeb4d17332796"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "saveProduct",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Mouse Genius\",\r\n    \"descripcion\": \"Motherboard Mother Asus Prime A320m-k ////////////\",\r\n    \"codigo\": \"123151648\",\r\n    \"url\": \"https://http2.mlstatic.com/D_NQ_NP_2X_814476-MLA47101074241_082021-F.webp\",\r\n    \"precio\": 3860,\r\n    \"stock\": 25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteProductById",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/producto/62fc26b26e6eeb4d17332796",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"producto",
+								"62fc26b26e6eeb4d17332796"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getAllProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/producto",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"producto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateProductById",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nombre\": \"Mouse Genius test update\",\r\n    \"descripcion\": \"Motherboard Mother Asus Prime A320m-k ////////////\",\r\n    \"codigo\": \"123151648\",\r\n    \"url\": \"https://http2.mlstatic.com/D_NQ_NP_2X_814476-MLA47101074241_082021-F.webp\",\r\n    \"precio\": 3860,\r\n    \"stock\": 25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/producto/62fc26b26e6eeb4d17332796",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"producto",
+								"62fc26b26e6eeb4d17332796"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Carritos",
+			"item": [
+				{
+					"name": "/api/carrito/",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/carrito/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carrito",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/carrito/:idCarrito/productos/:idProd",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/carrito/62fc5ad45818dbe3279ed77d/productos/62fc2748147d59876b6a4a37",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carrito",
+								"62fc5ad45818dbe3279ed77d",
+								"productos",
+								"62fc2748147d59876b6a4a37"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/carrito/:id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/carrito/62fc5ab55818dbe3279ed77c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carrito",
+								"62fc5ab55818dbe3279ed77c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/api/carrito/:idCarrito/productos/:idProd",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/carrito/62fc5ad45818dbe3279ed77d/productos/62fc2748147d59876b6a4a37",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carrito",
+								"62fc5ad45818dbe3279ed77d",
+								"productos",
+								"62fc2748147d59876b6a4a37"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "api/carrito/:id/productos",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/carrito/62fc5ad45818dbe3279ed77d/productos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"carrito",
+								"62fc5ad45818dbe3279ed77d",
+								"productos"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

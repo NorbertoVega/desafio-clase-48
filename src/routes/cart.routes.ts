@@ -11,5 +11,5 @@ export const routerCart = new Router()
   .post("/api/carrito", crearCarritoController)
   .delete("/api/carrito/:id", borrarCarritoController)
   .post("/api/carrito/:cartId/productos/:productId", agregarProductoACarritoController)
-  .get("/api/carrito/:cartId", obtenerProductosCarritoController)
+  .get("/api/carrito/:cartId/productos", obtenerProductosCarritoController)
   .delete("/api/carrito/:cartId/productos/:productId", borrarProductoDelCarritoController);
