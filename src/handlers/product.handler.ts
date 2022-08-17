@@ -37,7 +37,7 @@ export async function getProductoByIdController(ctx: Context) {
     }
     catch (err) {
         ctx.response.status = 500;
-        ctx.response.body = { code: '99', msg: err };
+        ctx.response.body = { code: 99, msg: err };
     }
 }
 
@@ -60,7 +60,7 @@ export async function saveProductController(ctx: Context) {
     }
     catch (err) {
         ctx.response.status = 500;
-        ctx.response.body = { code: '99', msg: err };
+        ctx.response.body = { code: 99, msg: err };
     }
 }
 
@@ -91,7 +91,7 @@ export async function updateProductController(ctx: Context) {
     }
     catch (err) {
         ctx.response.status = 500;
-        ctx.response.body = { code: '99', msg: err };
+        ctx.response.body = { code: 99, msg: err };
     }
 }
 
@@ -109,6 +109,6 @@ export async function deleteProductController(ctx: Context) {
     }
     catch (err) {
         ctx.response.status = 500;
-        ctx.response.body = { code: '99', msg: err };
+        ctx.response.body = { code: 99, msg: err };
     }
 }
